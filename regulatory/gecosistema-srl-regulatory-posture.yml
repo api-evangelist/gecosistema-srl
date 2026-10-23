@@ -1,0 +1,21 @@
+generated: '2026-10-23'
+method: probed
+source: https://gecosistema.com/privacy
+signals:
+  data_subject_request:
+    - source: https://gecosistema.com/privacy
+      http_status: 200
+      fetched: true
+      quote: "Se l’Utente rifiuta di comunicarli, potrebbe essere impossibile per questa Applicazione fornire il Servizio. Nei casi in cui questa Applicazione indichi alcuni Dati come facoltativi, gli Utenti sono liberi di astenersi dal comunicare tali Dati, senza che ciò abbia alcuna conseguenza sulla disponibilità del Servizio o sulla sua operatività."
+      note: Users may refuse to provide optional data without impact on service.
+    - source: https://gecosistema.com/privacy
+      http_status: 200
+      fetched: true
+      quote: "Gli Utenti che dovessero avere dubbi su quali Dati siano obbligatori, sono incoraggiati a contattare il Titolare."
+      note: Provides contact info for data subject inquiries.
+  subprocessors:
+    - source: https://gecosistema.com/privacy
+      http_status: 200
+      fetched: true
+      quote: "Oltre al Titolare, in alcuni casi, potrebbero avere accesso ai Dati altri soggetti coinvolti nell’organizzazione di questa Applicazione (personale amministrativo, commerciale, marketing, legali, amministratori di sistema) ovvero soggetti esterni (come fornitori di servizi tecnici terzi, corrieri postali, hosting provider, società informatiche, agenzie di comunicazione) nominati anche, se necessario, Responsabili del Trattamento da parte del Titolare."
+      note: Lists external service providers as potential subprocessors.

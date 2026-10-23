@@ -1,23 +1,70 @@
 aid: gecosistema-srl
+
 name: GECOsistema srl
-description: 'GECOsistema srl is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://gecosistema.com/wp-content/uploads/2018/05/logo-sito-800x400.png
+
+description: 'GECOsistema srl is a specialist company that provides advanced engineering cloud‑web, data‑science and modeling studies and services focused on environmental, climate risk and geospatial intelligence. It delivers consulting, monitoring and predictive analytics for public authorities, stakeholders and organisations dealing with environmental modelling, flood risk, air and water pollution, and renewable energy projects.'
+
 url: https://raw.githubusercontent.com/api-evangelist/gecosistema-srl/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
-- Company
-apis: []
+- Environmental
+- Climate Risk
+- Geospatial Intelligence
+- Data Science
+- Modeling
+- Consulting
+- Cloud Services
+- Renewable Energy
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/gecosistema-srl-hosts.yml
+- type: PrivacyPolicy
+  url: https://gecosistema.com/privacy/
+- type: Newsroom
+  url: https://gecosistema.com/news/
+- type: DomainSecurity
+  url: security/gecosistema-srl-domain-security.yml
 - type: Website
   url: https://gecosistema.com/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-23'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://gecosistema.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
